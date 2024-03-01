@@ -2,3 +2,111 @@ body{
     margin: 0;
     padding: 0;
 }
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header{
+    display: flex;
+    /* ↓間隔を開けながら横に揃える */
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+}
+
+/* article 近くのお店に配達を注文 */
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin-left: 30px;
+}
+
+nav button{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* article 従業員に食事を提供〜 */
+.eat{
+    width: 100%;
+    height: auto;
+}
+
+article{
+    position: relative;
+}
+.catch{
+    position:absolute;
+    top: 20px;
+    left: 30px;
+}
+
+dl{
+    display: flex;
+    justify-content: space-around;
+}
+
+dl img{
+    width: 320px;
+    height: auto;
+}
+
+dt{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/* article uber-eatが利用できるところ */
+
+.ken{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+/* article uber eat */
+.look{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.click{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* 幅を調整 */
+.kuni iframe{
+    width: 100%;
+}
+article{
+    /* ↓articleに幅をすると全体がまとまる */
+    width: 960;
+}
+@media (max-width:900px) {
+    dl{
+        max-width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    dl{
+        /* ↓スマホ版の対応で縦に並べるのでdisplay: flex;を解除する */
+        display: block;
+    }
+    header{
+        display: block;
+    }
+    header h1{
+        display: block;
+    }
+    article{
+        text-align: center;
+    }
+}
