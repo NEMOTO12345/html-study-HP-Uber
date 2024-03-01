@@ -111,6 +111,8 @@ header{
     z-index: 1000;
     width: 100%;
 }
+
+
 @media (max-width:900px) {
     dl{
         max-width: 100%;
@@ -149,5 +151,11 @@ header{
 
     footer{
         font-size: 80%;
+    }
+}
+@media (min-width:800px) {
+    .seach{
+        width: 700px;
+        height: 50px; 
     }
 }
