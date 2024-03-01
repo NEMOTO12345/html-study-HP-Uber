@@ -42,8 +42,8 @@ article{
 }
 .catch{
     position:absolute;
-    top: 20px;
-    left: 30px;
+    top: 180px;
+    left: 50px;
 }
 
 dl{
@@ -81,6 +81,21 @@ dt{
     grid-template-columns: 1fr 1fr;
 }
 
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons i{
+    margin: 0 10px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* 幅を調整 */
 .kuni iframe{
     width: 100%;
@@ -88,6 +103,13 @@ dt{
 article{
     /* ↓articleに幅をすると全体がまとまる */
     width: 960;
+}
+
+/* header固定 */
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 @media (max-width:900px) {
     dl{
@@ -100,13 +122,32 @@ article{
         /* ↓スマホ版の対応で縦に並べるのでdisplay: flex;を解除する */
         display: block;
     }
+
     header{
-        display: block;
+            position: static;
     }
     header h1{
         display: block;
+        font-size: 100%;
+    }
+    .eat{
+
+        background-size: cover;
+    }
+
+    .catch{
+        top: 70px;
+        right: 20px;
     }
     article{
         text-align: center;
+    }
+
+    .look{
+        font-size: 80%;
+    }
+
+    footer{
+        font-size: 80%;
     }
 }
