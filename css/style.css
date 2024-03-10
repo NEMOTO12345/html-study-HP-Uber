@@ -32,9 +32,11 @@ nav button{
 }
 
 /* article 従業員に食事を提供〜 */
-.eat{
+.food img{
     width: 100%;
-    height: auto;
+    height: 100vh;
+
+
 }
 
 article{
@@ -111,6 +113,7 @@ header{
     z-index: 1000;
     width: 100%;
 }
+/* ハンバーガーメニュー */
 
 
 @media (max-width:900px) {
@@ -127,10 +130,10 @@ header{
 
     header{
             position: static;
+            display: block;
     }
     header h1{
         display: block;
-        font-size: 100%;
     }
     .eat{
 
@@ -151,6 +154,27 @@ header{
 
     footer{
         font-size: 80%;
+    }
+
+    /* ハンバーガーメニュー */
+    header nav{
+        position: fixed;
+        right: -100%;
+        z-index: 100;
+    }
+
+    body.open header{
+        display: block;
+    }
+    body.open nav{
+        left: 0;
+        background-color: #00000040;
+        display: block;
+        right: 50%;
+    }
+    
+    body.open nav ul{
+        display: block;
     }
 }
 @media (min-width:800px) {
