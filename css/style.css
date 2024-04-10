@@ -1,185 +1,200 @@
 body{
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
 }
-
 
 ul{
     list-style-type: none;
-    padding-left: 0;
 }
 
-header{
-    display: flex;
-    /* ↓間隔を開けながら横に揃える */
-    justify-content: space-around;
-    background-color: white;
-    align-items: center;
+i{
+    font-size: 180%;
 }
-
-/* article 近くのお店に配達を注文 */
-nav ul{
-    display: flex;
-}
-
-nav li{
-    margin-left: 30px;
-}
-
-nav button{
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-/* article 従業員に食事を提供〜 */
-.food img{
-    width: 100%;
-    height: 100vh;
-
-
-}
-
 article{
-    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.catch{
-    position:absolute;
-    top: 180px;
-    left: 50px;
+section,footer{
+    margin-top: 15%;
 }
-
-dl{
+header{
+    position: sticky;
+    top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    background-color: #fff;
+    z-index: 1;
 }
 
-dl img{
-    width: 320px;
-    height: auto;
+header div{
+    display: flex;
 }
 
-dt{
-    font-weight: bold;
+header i{
+    padding: 0 10px;
     font-size: 120%;
 }
 
-/* article uber-eatが利用できるところ */
-
-.ken{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-   }
-
-/* article uber eat */
-.look{
+header nav ul{
     display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    list-style-type: none;
 }
 
-.click{
+header nav ul li{
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5%;
+    border: 1px solid #000;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li:nth-child(2){
+    background-color: #000;
+}
+
+header nav ul li:nth-child(2) a{
+    color: #fff;
+}
+
+/* main */
+.main{
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.catch{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100%;
+}
+
+.catch form{
+    display: flex;
+    width: 100%;
+    font-size: 120%;
+}
+form p{
+    padding-right: 20px;
+}
+form input,select{
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px 50px;
+    height: 80%;
+}
+
+form button{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5%;
+    height: 80%;
+}
+
+/* s1 */
+.s1{
+    height: 100%;
+}
+.s1-container{
+    display: flex;
+    width: 100%;
+}
+
+.s1-content1,.s1-content2,.s1-content3{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.s1-content1 div,.s1-content2 div,.s1-content3 div{
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.s1-content1 img,.s1-content2 img,.s1-content3 img{
+    height: 100%;
+}
+
+/* s2 */
+
+.s2{
+    width: 100%;
+}
+
+.s2-container{
+    width: 100%;
+}
+.s2-content1{
+    width: 80%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s2-content1 iframe{
+    width: 100%;
+}
+
+.s2-content2{
+    width: 100%;
+}
+.s2-content2 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+/* S3 */
+.s3-container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.s3-contant1 div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+
+.s3-contant1 div img{
+
+    padding-right: 10px;
+}
+.s3-content2 ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.icons{
+/* footer */
+footer{
+    padding: 50px 0;
+    border-top: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-content1{
     display: flex;
     justify-content: space-around;
 }
-
-.icons i{
-    margin: 0 10px;
+.f-content1 p{
+    padding-left: 10px;
 }
-
-
-footer{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* 幅を調整 */
-.kuni iframe{
-    width: 100%;
-}
-article{
-    /* ↓articleに幅をすると全体がまとまる */
-    width: 960;
-}
-
-/* header固定 */
-header{
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-}
-/* ハンバーガーメニュー */
-
-
-@media (max-width:900px) {
-    dl{
-        max-width: 100%;
-    }
-}
-
-@media (max-width:600px) {
-    dl{
-        /* ↓スマホ版の対応で縦に並べるのでdisplay: flex;を解除する */
-        display: block;
-    }
-
-    header{
-            position: static;
-            display: block;
-    }
-    header h1{
-        display: block;
-    }
-    .eat{
-
-        background-size: cover;
-    }
-
-    .catch{
-        top: 70px;
-        right: 20px;
-    }
-    article{
-        text-align: center;
-    }
-
-    .look{
-        font-size: 80%;
-    }
-
-    footer{
-        font-size: 80%;
-    }
-
-    /* ハンバーガーメニュー */
-    header nav{
-        position: fixed;
-        right: -100%;
-        z-index: 100;
-    }
-
-    body.open header{
-        display: block;
-    }
-    body.open nav{
-        left: 0;
-        background-color: #00000040;
-        display: block;
-        right: 50%;
-    }
-    
-    body.open nav ul{
-        display: block;
-    }
-}
-@media (min-width:800px) {
-    .seach{
-        width: 700px;
-        height: 50px; 
-    }
+.f-content2{
+    text-align: right;
+    font-size: 80%;
 }

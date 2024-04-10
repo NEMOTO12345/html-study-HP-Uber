@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/21465231b5.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -22,94 +23,120 @@
 </head>
 <body>
     <header>
-        <h1><i class="fa-solid fa-bars"></i>Uber Eat</h1>
+        <div>
+            <h1><i class="fa-solid fa-bars"></i>Uber Eat</h1>
+        </div>
         <nav>
             <ul>
-                <li><label><button type="submit">ログイン</button></label</li>
-                <li><label><button type="submit">登録する</button></label</li>
+                <li><a href="">ログイン</a></li>
+                <li><a href="">登録する</a></li>
             </ul>
         </nav>
     </header>
-    <article class="food">
-    <img class="eat" src="image/eat.jpg" alt="食べ物の写真">
-    <div class=catch>
-        <h1>近くのお店に配達を注文</h1>
-        <form>
-            <ul>
-                <li><label><input type="text" class="seach" placeholder="お届け先の住所を入力してください"></label></li>
-                <li><label><input type="text" class="seach"></label></li>
-                <li><button type="submit" class="seach">フードを探す</button></li>
-            </ul>
-        </form>
-    </div>
-    </article>
-    <article>
-        <dl>
-            <div>
-                <img src="image/disk.jpg" alt="机の画像">
-                <dt>従業員に食事を提供</dt>
-                <dd>ビジネス用アカウントを作成する</dd>
-            </div>
-            <div>
-                <img src="image/cook.jpg" alt="料理の画像">
-                <dt>レストランの料理をお客様へお届け</dt>
-                <dd>加盟レストランとして登録する</dd>
-            </div>
-            <div>
-                <img src="image/bike.jpg" alt="自転車の画像">
-                <dt>Uber Eatで配達する</dt>
-                <dd>配達パートナーとして登録する</dd>
-            </div>
-        </dl>
-    </article>
-    <article class="kuni">
-        <h1>Uber-Eatが利用できるところ</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27255158.220506288!2d137.15386460000002!3d33.500188599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sja!2sjp!4v1709210941687!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <ul class="ken">
-            <li>埼玉</li>
-            <li>千葉</li>
-            <li>神奈川</li>
-            <li>群馬</li>
-            <li>栃木</li>
-            <li>東京</li>
-            <li>愛媛</li>
-            <li>福岡</li>
-            <li>鹿児島</li>
-            <li>石川</li>
-            <li>北海道</li>
-            <li>青森</li>
-            <li>秋田</li>
-            <li>宮城</li>
-            <li>鹿児島</li>
-            <li>福岡</li>
-        </ul>
-    </article>
-    <article class="look">
-        <div>
-            <h1>Uber Eat</h1>
-            <p><i class="fa-brands fa-apple"></i></p>
-            <p><i class="fa-brands fa-google-pay"></i></p>
+    <div class="main">
+        <img src="image/eat.jpg" alt="食べ物の写真">
+        <div class=catch>
+            <h1>近くのお店に配達を注文</h1>
+            <form>
+                <p><label><input type="text" class="seach" placeholder="お届け先の住所を入力してください"></label></p>
+                <p><label>
+                    <select>
+                        <option>すぐ配達👇</option>
+                        <option>Banana</option>
+                        <option>Cherry</option>
+                    </select>
+                </label></p>
+                <p><button type="submit" class="seach">フードを探す</button></p>
+            </form>
         </div>
-        <ul class="click">
-            <li>問い合わせる</li>
-            <li>加盟レストランとして登録</li>
-            <li>配達パートナーとして登録</li>
-            <li>ビジネス用アカウントを作成する</li>
-            <li>プロモーション</li>
-            <li>近くのレストラン</li>
-            <li>全ての都道府県を表示</li>
-            <li>お近くでピックアップ</li>
-            <li>Uber Eatについて</li>
-            <li>日本語</li>
-        </ul>
+    </div>
+    <article>
+        <section class="s1">
+            <div class="s1-container">
+                <div class="s1-content1">
+                    <div>
+                        <img src="image/disk.jpg" alt="机の画像">
+                    </div>
+                    <p>従業員に食事を提供</p>
+                    <p>ビジネス用アカウントを作成する</p>
+                </div>
+                <div class="s1-content2">
+                    <div>
+                        <img src="image/cook.jpg" alt="料理の画像">
+                    </div>
+                    <p>レストランの料理をお客様へお届け</p>
+                    <p>加盟レストランとして登録する</p>
+                </div>
+                <div class="s1-content3">
+                    <div>
+                        <img src="image/bike.jpg" alt="自転車の画像">
+                    </div>
+                    <p>Uber Eatで配達する</p>
+                    <p>配達パートナーとして登録する</p>
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <h1>Uber-Eatが利用できるところ</h1>
+            <div class="s2-container">
+                <div class="s2-content1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27255158.220506288!2d137.15386460000002!3d33.500188599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sja!2sjp!4v1709210941687!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="s2-content2">
+                    <ul>
+                        <li>埼玉</li>
+                        <li>千葉</li>
+                        <li>神奈川</li>
+                        <li>群馬</li>
+                        <li>栃木</li>
+                        <li>東京</li>
+                        <li>愛媛</li>
+                        <li>福岡</li>
+                        <li>鹿児島</li>
+                        <li>石川</li>
+                        <li>北海道</li>
+                        <li>青森</li>
+                        <li>秋田</li>
+                        <li>宮城</li>
+                        <li>鹿児島</li>
+                        <li>福岡</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="s3-container">
+                <div class="s3-contant1">
+                    <h1>Uber Eat</h1>
+                    <div>
+                        <img src="image/App_log.png" alt="Appleストアのロゴ">
+                        <img src="image/Google_log.png" alt="Googleのロゴ">
+                    </div>
+                </div>
+                <div class="s3-content2">
+                    <ul>
+                        <li>問い合わせる</li>
+                        <li>加盟レストランとして登録</li>
+                        <li>配達パートナーとして登録</li>
+                        <li>ビジネス用アカウントを作成する</li>
+                        <li>プロモーション</li>
+                        <li>近くのレストラン</li>
+                        <li>全ての都道府県を表示</li>
+                        <li>お近くでピックアップ</li>
+                        <li>Uber Eatについて</li>
+                        <li>日本語</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </article>
     <footer>
-        <div class="icons">
+        <div class="f-content1">
             <p><i class="fa-brands fa-facebook"></i></p>
             <p><i class="fa-brands fa-twitter"></i></p>
             <p><i class="fa-brands fa-instagram"></i></p>
         </div>
-        <div>
+        <div class="f-content2">
             <nav>
                 <ul>
                     <li>個人情報保護方針</li>
