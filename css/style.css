@@ -129,6 +129,11 @@ form button{
     width: 100%;
 }
 
+.s2 h1{
+    font-size: 150%;
+    padding: 10px 0;
+}
+
 .s2-container{
     width: 100%;
 }
@@ -162,7 +167,11 @@ form button{
     position: relative;
 }
 
-.s3-contant1 div{
+.s3-content1 h1{
+    font-size: 160%;
+}
+
+.s3-content1 div{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -170,9 +179,8 @@ form button{
     bottom: 0;
 }
 
-.s3-contant1 div img{
-
-    padding-right: 10px;
+.s3-content1 div img{
+    margin-left: 10%;
 }
 .s3-content2 ul{
     display: grid;
@@ -197,4 +205,79 @@ footer{
 .f-content2{
     text-align: right;
     font-size: 80%;
+}
+
+@media (max-width:900px) {
+    /* main */
+    .catch{
+        transform: translate(-10%,-50%);
+        text-align: center;
+    }
+    .main form{
+        display: block;
+    }
+    .main form p{
+        width: 100%;
+    }
+
+    .main form p input,select,button{
+        width: 80%;
+    }
+
+    .s3-content1 div{
+        display: block;
+        position: static;
+
+    }
+    .s3-content1 div img{
+        margin-left: 0;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    header{
+        font-size: 60%;
+    }
+
+    article{
+        width: 100%;
+    }
+
+    section{
+        font-size: 50%;
+    }
+
+    .s2 h1{
+        text-align: center;
+    }
+
+    .s2-content1{
+        aspect-ratio: 1/1;
+        overflow: hidden;
+    }
+
+    .s3-container{
+        display: block;
+    }
+    .s3-content1 div img{
+        display: block;
+        padding: 10px 0;
+    }
+    .s3-content2 ul{
+        display: block;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .f-content1{
+        justify-content: left;
+    }
+
+    .f-content2{
+        text-align: left;
+    }
 }
