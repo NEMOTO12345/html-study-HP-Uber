@@ -37,12 +37,34 @@ header i{
     font-size: 120%;
 }
 
-header nav ul{
+header .nav1{
+    position: fixed;
+    top: 0;
+    left: -999px;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+
+.open header .nav1{
+    left: 0;
+    background-color: #fff;
+    height: 50%;
+    width: 20%;
+    opacity: 1;
+}
+.open header .nav1 ul{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+header .nav2 ul{
     display: flex;
     list-style-type: none;
 }
 
-header nav ul li{
+header .nav2 ul li,.nav1 ul li{
     margin: 0 10px;
     padding: 10px 30px;
     border-radius: 5%;
@@ -87,7 +109,7 @@ form p{
 form input,select{
     background-color: #fff;
     border: 1px solid #000;
-    padding: 5px 50px;
+    padding: 5px;
     height: 80%;
 }
 
@@ -95,7 +117,6 @@ form button{
     background-color: #000;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 5%;
     height: 80%;
 }
 
@@ -207,8 +228,11 @@ footer{
     font-size: 80%;
 }
 
-@media (max-width:900px) {
+@media (max-width:1100px) {
     /* main */
+    .open header .nav1 ul{
+        font-size: 80%;
+    }
     .catch{
         transform: translate(-10%,-50%);
         text-align: center;
@@ -218,6 +242,7 @@ footer{
     }
     .main form p{
         width: 100%;
+        padding: 1px 0;
     }
 
     .main form p input,select,button{
@@ -239,6 +264,10 @@ footer{
 @media (max-width:600px) {
     header{
         font-size: 60%;
+    }
+
+    .open header .nav1{
+        width: 40%;
     }
 
     article{
